@@ -1,9 +1,11 @@
 # Gets current git branch and pushes code with a specified message
 
-$CurrentGitBranch = git symbolic-ref --short HEAD
-
-param(
-  [Parameter(Mandatory=$true)][string]$Message
+param (
+  [Parameter(Mandatory=$true)][string]$m
 )
 
-echo $Message
+$currentGitBranch = git symbolic-ref --short HEAD
+
+git add .
+git commit -m $m
+git push origin $currentGitBranch
