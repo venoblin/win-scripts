@@ -20,6 +20,7 @@ Table of Contents
   - [Installation](#installation)
 - [Usage](#usage)
   - [`ezgitpush`](#ezgitpush)
+  - [`ezgitpull`](#ezgitpull)
 
 ## About The Project
 This project provides a collection of utility scripts designed to streamline common tasks in a Windows environment. These scripts automate tasks such as system updates, file management, and Git interactions, improving workflow efficiency and reducing manual effort.
@@ -40,5 +41,11 @@ This project was built with the following technologies:
 ### `ezgitpush` 
 - Pushes to current Git branch
 ```sh
-ezgitpush "commit message"
+ezgitpush -m "commit message"
+```
+
+### `ezgitpull` 
+- Pulls from current Git branch
+```sh
+ezgitpull
 ```
