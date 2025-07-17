@@ -22,6 +22,7 @@ Table of Contents
   - [`ezgitpush`](#ezgitpush)
   - [`ezgitpull`](#ezgitpull)
   - [`ezrmdir`](#ezrmdir)
+  - [`ezreadmeinit`](#ezreadmeinit)
 
 ## About The Project
 This project provides a collection of utility scripts designed to streamline common tasks in a Windows environment. These scripts automate tasks such as system updates, file management, and Git interactions, improving workflow efficiency and reducing manual effort.
@@ -52,7 +53,13 @@ ezgitpull
 ```
 
 ### `ezrmdir` 
-- Pulls from current Git branch
+- Removes directory and any items in it
 ```sh
 ezrmdir -p "directory"
+```
+
+### `ezreadmeinit` 
+- Initializes README template files inside current working directory
+```sh
+ezreadmeinit
 ```
